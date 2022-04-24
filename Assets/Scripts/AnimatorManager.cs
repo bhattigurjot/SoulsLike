@@ -6,9 +6,9 @@ namespace GSB
 {
     public class AnimatorManager : MonoBehaviour
     {
-        public Animator anim;
-        int vertical;
-        int horizontal;
+        private Animator anim;
+        private int vertical;
+        private int horizontal;
 
         public void Initialize()
         {
@@ -19,7 +19,6 @@ namespace GSB
 
         public void UpdateAnimatorValues(float verticalMovement, float horizontalMovement, bool isSprinting)
         {
-            
             float v = 0f;
             float h = 0f;
 
