@@ -25,17 +25,17 @@ namespace GSB
             #region Vertical
             if (verticalMovement > 0 && verticalMovement < 0.5f)
             {
-                v = 0.55f;
+                v = 0.5f;
             }
-            else if (verticalMovement > 0.55f)
+            else if (verticalMovement > 0.5f)
             {
                 v = 1f;
             }
             else if (verticalMovement < 0 && verticalMovement > -0.5f)
             {
-                v = -0.55f;
+                v = -0.5f;
             }
-            else if (verticalMovement < -0.55f)
+            else if (verticalMovement < -0.5f)
             {
                 v = -1f;
             }
@@ -50,7 +50,7 @@ namespace GSB
             {
                 h = 0.5f;
             }
-            else if (horizontalMovement > 0.55f)
+            else if (horizontalMovement > 0.5f)
             {
                 h = 1f;
             }

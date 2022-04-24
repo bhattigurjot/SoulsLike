@@ -8260,7 +8260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33274d2460dadc24eb8e28dd2b2bf681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
 --- !u!1 &1310317596
 GameObject:
   m_ObjectHideFlags: 0
