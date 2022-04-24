@@ -6,23 +6,30 @@ namespace GSB
 {
     public class PlayerManager : MonoBehaviour
     {
-        InputManager inputManager;
-        PlayerLocomotion playerLocomotion;
+        private InputManager inputManager;
+        private CameraManager cameraManager;
+        private PlayerLocomotion playerLocomotion;
 
-        void Awake()
+        private void Awake()
         {
             inputManager = GetComponent<InputManager>();
+            cameraManager = FindObjectOfType<CameraManager>();
             playerLocomotion = GetComponent<PlayerLocomotion>();
         }
 
-        void Update()
+        private void Update()
         {
             inputManager.HandleAllInputs();
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             playerLocomotion.HandleAllMovement();
+        }
+
+        private void LateUpdate()
+        {
+            cameraManager.HandleAllCameraMovement();
         }
     }
 }
